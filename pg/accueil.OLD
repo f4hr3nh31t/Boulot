@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cellule Amélioration Qualité</title>
+	
+	
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="icon" href="img/favicon.ico">
+	<!--
+	<style type="text/css"> 
+     @font-face {   font-family: 'Glyphicons Halflings';   
+     src: url('../fonts/glyphicons-halflings-regular.eot');   
+     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+     url('../fonts/glyphicons-halflings-regular.woff') format('woff'),  
+     url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+     url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg'); } 
+	</style>
+	-->
+    <link href="css/style.css" rel="stylesheet">
+	
+	
+	
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<img alt="Bootstrap Image Preview" src="img/bg_navbar2.png" width=100%>
+			<nav class="navbar navbar-default navbar-inverse" role="navigation">
+			<!--<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">Brand</a>
+				</div>-->
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Accueil</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Dossier Organisation Unité">DOI<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Accueil</a>
+								</li>
+								<li>
+									<a href="#">Notes de fonctionnement</a>
+								</li>
+								<li>
+									<a href="#">Notes de désignation</a>
+								</li>
+								<li>
+									<a href="#">Dossiers informatiques</a>
+								</li>
+								<li>
+									<a href="#">Fiches réflexes</a>
+								</li>
+								<li>
+									<a href="#">Fiches de postes</a>
+								</li>
+								<li>
+									<a href="#">Checks-list APRSeurs</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Flashs</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="tooltip" title="Plan Evaluation Unité">PEU</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="tooltip" title="Fiches Facteur Humain">Fiches FH</a>
+						</li>
+						
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">CI<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-level">
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">RH</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Directives CI 2 - DRHAA</a></li>
+										<li><a href="#">Directives CI 2d - BA 118</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">CFA</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Suivi</a></li>
+										<li class="dropdown-submenu">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fiche de contrôle unité</a>											
+											<ul class="dropdown-menu">
+												<li><a href="#">CAQ</a></li>
+												<li><a href="#">CFU</a></li>
+												<li><a href="#">CMR</a></li>
+												<li><a href="#">CSSI</a></li>
+												<li><a href="#">Division Appui</a></li>
+												<li><a href="#">Division Mirage</a></li>
+												<li><a href="#">Division Rafale</a></li>
+											</ul>
+										</li>
+										<li><a href="#">BML</a></li>
+										<li class="dropdown-submenu">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Directives CI</a>											
+											<ul class="dropdown-menu">
+												<li><a href="#">CFA-Munitions</a></li>
+												<li><a href="#">CI 1-ESTA</a></li>
+												<li><a href="#">CI 2-CFA</a></li>
+												<li><a href="#">CI 2d-BA 118</a></li>
+												<li><a href="#">CI 3 -EMAA</a></li>												
+											</ul>
+										</li>
+									</ul>
+								</li>								
+							</ul>
+						</li>
+					
+					
+					
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Audits Section Assurance Qualité">Audits SAQ<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Suivi des FAC et FAP</a>
+								</li>
+								<li>
+									<a href="#">Aide</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Certification FRA<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">FRA 145</a>
+								</li>
+								<li>
+									<a href="#">FRA 147</a>
+								</li>
+								<li class="dropdown-submenu">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">FRA M</a>											
+											<ul class="dropdown-menu">
+												<li><a href="#">2017_Audit suivi agrément FRA M M2000_A-jet_TBM</a></li>
+												<li><a href="#">ALPHA-JET</a></li>
+												<li><a href="#">M2000</a></li>
+												<li><a href="#">RAFALE</a></li>
+												<li><a href="#">TBM</a></li>												
+											</ul>
+								</li>								
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens ESTA<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#" data-toggle="tooltip" title="Tableau Suivi ">TSCQ</a>
+								</li>
+								<li>
+									<a href="#">LIPD</a>
+								</li>
+								<li>
+									<a href="#">Contrôle de gestion</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modèles<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Fiches</a>
+								</li>
+								<li>
+									<a href="#">Fiche d'évaluation PEU</a>
+								</li>
+								<li>
+									<a href="#">Outillage</a>
+								</li>
+								<li>
+									<a href="#">Contrôle Interne</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Glossaire</a>
+						</li>
+						<li>
+							<a href="#">Contacts</a>
+						</li>
+					<!--<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+						</li>-->
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input class="form-control" type="text">
+						</div> 
+						<button type="submit" class="btn btn-default glyphicon glyphicon-search">
+						</button>
+					</form>
+				<!--<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>-->
+				</div>
+				
+			</nav>
+			
+            
+			
+			<div class="jumbotron well">
+				<h2>
+					Bienvenue sur le site de la Cellule Amélioration Qualité
+				</h2>
+				<p>
+					Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+	</div>
+	<footer class="footer">	
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container-fluid">
+			<!--<div class="row" style="font-size: 0.8em; margin-top: 10px;">					
+					<div class="col-md-2">
+						<div class="col-md-5">
+							<img src="img/01_Puloch.jpg" class="img-circle" height=75px alt="Puloch">
+							<span><i class="glyphicon glyphicon-user"></i> ADC PULOCH</span><br>
+						</div>
+						<div class="col-md-7">							
+							<span><i class="glyphicon glyphicon-earphone"></i> 23603</span><br>
+							<span><i class="glyphicon glyphicon-envelope"></i>eric.puloch@intradef.gouv.fr</span>	
+						</div>
+					
+					</div>
+					<div class="col-md-2">
+						<img src="img/02_Chappaz.jpg" class="img-circle" height=75px alt="Chappaz">
+					</div>
+					<div class="col-md-2">
+						<img src="img/03_Bauchot.jpg" class="img-circle" height=75px alt="Bauchot">
+					</div>
+					<div class="col-md-2">
+						<img src="img/04_Serre.jpg" class="img-circle" height=75px alt="serre">
+					</div>
+					<div class="col-md-2">.col-2</div>
+					<div class="col-md-2">.col-2</div>
+				</div>-->				
+				
+				
+				
+				<div class="row">
+					
+					<div class="col-lg-4">
+						<h3>Liens divers:</h3>
+						<p><a href="" title="Contact me!"><i class=" glyphicon glyphicon-link"></i> Liens ESTA</a></p>
+						<p><a href="" title="Contact me!"><i class="glyphicon glyphicon-envelope"></i> Modèles de documents</a></p>
+					</div>
+					<div class="col-lg-4">
+						<h3>Equipe CAQ:</h3>
+						<div class="row">
+							<div class="col-lg-3 text-center">																
+								<a href="" data-toggle="modal" data-target="#ContactCardPuloch" title="Contact!"> ADC Puloch</a>
+							</div>
+							<div class="col-lg-3 text-center">
+								<a href="" title="Contact!"> ADC Chappaz</a>
+							</div>
+							<div class="col-lg-3 text-center">																
+								<a href="" title="Contact!"> ADC Bauchot</a>
+							</div>
+							<div class="col-lg-3 text-center">
+								<a href="" title="Contact!"> ADJ Serre</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<p>© 2017 - Site Built By Mr. L.</p>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+		
+		<!-- Modal -->
+	<!--<div class="modal fade" id="ContactCardPuloch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">									
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h2 class="modal-title text-center" id="exampleModalLabel">ADC Puloch</h2>
+						<img src="img/01_Puloch.jpg" class="img-rounded"></img>
+					</div>-->
+					<!--
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+					-->
+			<!--</div>
+			</div>
+		</div>-->
+		
+		  <!-- Modal -->
+		<div class="modal fade" id="ContactCardPuloch" role="dialog">
+			<div class="modal-dialog modal-sm">
+				  
+				<div class="modal-content">
+				<!--
+				<div class="modal-header bg-info">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h2 class="text-center">Bootply</h2>
+				</div>
+				-->
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">							  
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times</button>
+							</div>
+							<div class="row">
+								
+								<div class="col-md-12 text-center"><img src="img/01_Puloch.jpg" class="img-circle" height="100"></div>								
+								
+							</div>
+							
+							<div class="text-center">
+								<h3>Eric Puloch</h3>
+								<br>							
+								<p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:eric.puloch@intradef.gouv.fr" style="text-decoration: none"> eric.puloch@intradef.gouv.fr</a></p>    
+							<!--<p><a href="#"><span class="glyphicon glyphicon-envelope"></span></a> johnjohn.doedoe@intradef.gouv.fr</p>-->
+								<p><span class="glyphicon glyphicon-earphone"></span> 12345</p>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		
+		
+	</footer>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
