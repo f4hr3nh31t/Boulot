@@ -1,8 +1,12 @@
+body {
+    height: 2000px;
+}
 
+/*
+##################################################
+#    Styles pour les sous menu dans la navbar    #
+##################################################
 
-############################################
-#          Styles pour les sous menu dans la navbar         #
-############################################
 .dropdown-menu{
     border-radius: 0px;
     -webkit-box-shadow: none;
@@ -10,7 +14,7 @@
 }
 
 .dropdown-submenu {
-    /*position: initial;*/
+    /*position: initial;
 	position: relative;
 }
 
@@ -59,3 +63,4 @@
     border-radius: 6px 0 6px 6px;
 }
 #############################################
+*/

@@ -22,7 +22,7 @@
 <body>
     <div class="container-fluid">
         <!-- MENU -->
-		<div class="row">
+		<div class="row" id="top">
 			<div class="col-md-12">
 				<img alt="Banner" src="img/bg_navbar2.png" style="width: 100%">
 				
@@ -67,23 +67,23 @@
 						
 						<div class="col-lg-4">
 							<h3>Liens divers:</h3>
-							<p><a href="" title="Contact me!"><i class=" glyphicon glyphicon-link"></i> Liens ESTA</a></p>
-							<p><a href="" title="Contact me!"><i class="glyphicon glyphicon-envelope"></i> Modèles de documents</a></p>
+							<p><a href="" title=""><i class=" glyphicon glyphicon-link"></i> Liens ESTA</a></p>
+							<p><a href="" title=""><i class="glyphicon glyphicon-envelope"></i> Modèles de documents</a></p>
 						</div>
 						<div class="col-lg-4">
 							<h3>Equipe CAQ:</h3>
 							<div class="row">
 								<div class="col-lg-3 text-center">																
-									<a href="" data-toggle="modal" data-target="#ContactCardPuloch" title="Contact!"> ADC Puloch</a>
+									<a href="" data-toggle="modal" data-target="#ContactCardPuloch" title="Contact !"> ADC Puloch</a>
 								</div>
 								<div class="col-lg-3 text-center">
-									<a href="" data-toggle="modal" data-target="#ContactCardChappaz" title="Contact!"> ADC Chappaz</a>
+									<a href="" data-toggle="modal" data-target="#ContactCardChappaz" title="Contact !"> ADC Chappaz</a>
 								</div>
 								<div class="col-lg-3 text-center">																
-									<a href="" data-toggle="modal" data-target="#ContactCardBauchot" title="Contact!"> ADC Bauchot</a>
+									<a href="" data-toggle="modal" data-target="#ContactCardBauchot" title="Contact !"> ADC Bauchot</a>
 								</div>
 								<div class="col-lg-3 text-center">
-									<a href="" data-toggle="modal" data-target="#ContactCardSerre" title="Contact!"> ADJ Serre</a>
+									<a href="" data-toggle="modal" data-target="#ContactCardSerre" title="Contact !"> ADJ Serre</a>
 								</div>
 							</div>
 						</div>
@@ -236,22 +236,30 @@
 			</div>
 			
 		</footer>
+
+		
 	</div>
 	
 	
 	<script>
         $(document).ready(function() {
             $('#content-area').load('pg/accueil.html');
-        });
+        
+			$('.link').click(function(){
+				var href = $(this).attr('href');
+				//alert(href);
+				$('#content-area').hide().load(href).fadeIn('normal');
+				$('li.active').removeClass('active');
+				$(this).parent().addClass('active');
+				return False;
+			});
 		
-		$('.link').click(function(){
-			var href = $(this).attr('href');
-			//alert(href);
-			$('#content-area').hide().load(href).fadeIn('normal');
-			$('li.active').removeClass('active');
-			$(this).parent().addClass('active');
-			return False;
+
+    		
+		
 		});
+		
+		
 	</script>
     
 </body>
